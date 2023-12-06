@@ -12,6 +12,7 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 import { useState } from 'react';
 
 import userData from "./data";
+// import { getLatestRate } from '../../utils/api';
 
 
 function AccountHolderCard() {
@@ -53,6 +54,9 @@ function AccountHolderCard() {
     setCurrencySymbol('₣')
   }
 
+  // const currentRates = getLatestRate();
+
+  // console.log('current Rate', currentRates)
   // functions to convert between currencies with current exchange rates 
   const USDtoEUR = amount => {
     let USDtoEUR_rate = .91

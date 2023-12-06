@@ -1,9 +1,8 @@
-// "latest" endpoint - request the most recent exchange rate data
-require("dotenv").config();
-
 export async function getLatestRate() {
   try {
-    const accessKey = import.meta.env.ACCESS_KEY
+    const accessKey = import.meta.env.VITE_ACCESS_KEY
+
+    console.log('access', accessKey)
     // Replace 'https://api.example.com/data' with the actual URL of the API
     const response = await fetch(
       `http://data.fixer.io/api/latest?access_key=${accessKey}`

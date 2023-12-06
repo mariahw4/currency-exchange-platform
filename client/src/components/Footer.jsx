@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="container">
+    <footer className="my-4">
       <div className="contact-btns">
         <a
           target="_blank"
